@@ -1,7 +1,7 @@
 <template>
     <v-card class="ma-1" :class="cardClasses" width="70%">
         <v-card-text>
-            <span :class="nameClasses">{{ hours }}: {{minutes}} {{ name }}</span>&mdash;{{ message }} 
+            <span :class="nameClasses">{{ number  }}  {{ hours }}: {{minutes}} {{ name }}</span>&mdash;{{ message }} 
         </v-card-text>
     </v-card>
 </template>
@@ -13,7 +13,8 @@ export default {
         message: String,
         hours: Number,
         minutes: Number,
-        isSelf: Boolean
+        isSelf: Boolean,
+        number: Number
     },
     computed: {
         nameClasses() {
