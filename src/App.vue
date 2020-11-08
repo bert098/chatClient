@@ -19,7 +19,7 @@
         <v-card-text>
           <v-card  id = "scrolled-content" class=" mt-10 chats" width="70%" >
             <v-list>
-                  <chat  class="ma-5 " v-for="(chat, i) in chats" :key="i" :number="chat.number" :hours="chat.hours" :minutes="chat.minutes"  :name="chat.name" :color="chat.color" :isSelf="isMe(chat.name)" :message="chat.payload"/> 
+                  <chat  class="ma-5 " v-for="(chat, i) in chats" :key="i" :hours="chat.hours" :minutes="chat.minutes"  :name="chat.name" :color="chat.color" :isSelf="isMe(chat.name)" :message="chat.payload"/> 
               </v-list>
           </v-card >
           
